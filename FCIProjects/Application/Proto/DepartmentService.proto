@@ -1,0 +1,23 @@
+syntax = "proto3";
+option csharp_namespace = "Proto";
+
+service DepartmentService {
+  rpc DepartmentExist (DepartmentExistRequest) returns (DepartmentExistResponse);
+  rpc ManagerExist (ManagerExistRequest) returns (ManagerExistResponse);
+}
+
+message DepartmentExistRequest {
+  int32 departmentId = 1;
+}
+
+message DepartmentExistResponse {
+  bool exists = 1;
+}
+
+message ManagerExistRequest {
+  int32 managerId = 1;
+}
+
+message ManagerExistResponse {
+  bool exists = 1;
+}

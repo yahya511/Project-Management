@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Proto/DepartmentService.cs \
+obj\Debug\net8.0\Proto/DepartmentServiceGrpc.cs: Proto/DepartmentService.proto

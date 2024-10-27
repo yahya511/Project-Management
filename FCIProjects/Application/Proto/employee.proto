@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "Proto";
+
+service EmployeeService {
+  rpc GetEmployeeById (GetEmployeeByIdRequest) returns (GetEmployeeByIdResponse);
+  rpc EmployeeExist (EmployeeExistRequest) returns (EmployeeExistResponse); // إضافة خدمة جديدة للتحقق من ManagerID
+}
+
+message GetEmployeeByIdRequest {
+  int32 employeeId = 1;
+}
+
+message GetEmployeeByIdResponse {
+  string firstName = 1;
+  string lastName = 2;
+  int32 jobTitle = 3; // استخدام int32 للإشارة إلى JobTitle
+}
+
+message EmployeeExistRequest {
+  int32 managerId = 1; // طلب للتحقق من وجود ManagerID
+}
+
+message EmployeeExistResponse {
+  bool exists = 1; // إرجاع true إذا كان الموظف موجوداً، و false إذا لم يكن موجوداً
+}

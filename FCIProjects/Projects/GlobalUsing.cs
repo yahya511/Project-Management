@@ -1,0 +1,25 @@
+
+global using Application.Features.Projects.Commands.CreateProject;
+global using Application.Features.Projects.Commands.DeleteProject;
+global using Application.Features.Projects.Commands.UpdateProject;
+global using Application.Features.Projects.Queries.GetAllProjects;
+global using Application.Features.Projects.Queries.GetProjectById;
+global using Application.Features.Departments.Commands.CreateDepartment;
+global using Application.Features.Departments.Commands.DeleteDepartment;
+global using Application.Features.Departments.Commands.UpdateDepartment;
+global using Application.Features.Departments.Queries.GetAllDepartments;
+global using Application.Features.Departments.Queries.GetDepartmentById;
+global using Application.Features.Projects.Commands.CreateProjectAndDepartment;
+global using Domain.Models;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using System.Threading.Tasks;
+global using System;
+global using System.Reflection;
+global using System.Collections.Generic;
+global using Infrastructure.DbContexts;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Infrastructure.Repositories;
+global using Infrastructure.IRepositories;
