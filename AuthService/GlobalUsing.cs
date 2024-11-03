@@ -1,0 +1,15 @@
+global using AuthService.IRepositories;
+global using Microsoft.AspNetCore.Mvc;
+global using AuthService.DbContexts;
+global using AuthService.IRepositories;
+global using AuthService.Repositories;
+global using AuthService.Models;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using System.Security.Claims;
+global using System.Text;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using System.Linq.Expressions;
