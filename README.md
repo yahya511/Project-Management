@@ -1,6 +1,6 @@
 # Project Management System
 
-![Project Management System Logo](https://via.placeholder.com/600x200.png?text=Project+Management+System)
+![Project Management System Logo](https://github.com/yahya511/Project-Management/blob/main/FCILuxorDB_Diagram.jpg)
 
 ## Table of Contents
 
